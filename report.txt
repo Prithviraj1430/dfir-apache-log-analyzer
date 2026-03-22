@@ -1,0 +1,50 @@
+==============================
+APACHE LOG FORENSIC REPORT
+==============================
+
+1. Log File:
+access.log
+
+2. Hash Value (SHA256):
+(PASTE YOUR HASH HERE)
+
+----------------------------------
+
+3. Top Active IP Addresses:
+(PASTE OUTPUT OF TOP IP COMMAND)
+
+----------------------------------
+
+4. Suspicious Activity Detection:
+
+A. High 404 Requests (Scanning Behavior):
+(PASTE OUTPUT OF 404 COMMAND)
+
+B. Admin Panel Access Attempts:
+/admin endpoint accessed multiple times indicating unauthorized probing.
+
+C. Login Attempts:
+Repeated login-related requests observed, indicating brute force attempts.
+
+D. Directory Traversal Attempts:
+Presence of "../" patterns indicates attempts to access restricted system files.
+
+E. SQL Injection Attempts:
+Detection of keywords like SELECT, UNION, OR 1=1 in requests.
+
+----------------------------------
+
+5. Timeline Observation:
+(WRITE SIMPLE LINE)
+Example:
+High frequency of requests observed within short time intervals indicating automated attack behavior.
+
+----------------------------------
+
+6. Conclusion:
+
+The analysis of Apache access logs revealed suspicious activities including repeated failed requests, endpoint scanning, and potential exploitation attempts. The identified IP addresses demonstrate behavior consistent with brute force and reconnaissance attacks. Proper monitoring and access control mechanisms are recommended.
+
+==============================
+END OF REPORT
+==============================

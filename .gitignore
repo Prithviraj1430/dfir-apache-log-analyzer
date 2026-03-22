@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+uploads/
+static/graph.png
+report.pdf
+report.csv
